@@ -13,6 +13,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -259,5 +260,142 @@ nav ul li a:hover {
 
   .hero .right img {
     width: 70vw;
+  }
+}
+
+.client {
+  padding: 50px 0;
+}
+.client > h1 {
+  color: #999;
+  font-weight: 500;
+  font-size: 1.8vw;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.apply {
+  display: flex;
+  padding: 30px 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.company,
+.employee {
+  width: 500px;
+  height: 250px;
+  background-color: #fde7de;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.company img,
+.employee img {
+  width: 250px;
+}
+
+.company .details,
+.employee .details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+}
+.company .details a,
+.employee .details a {
+  background-color: #007456;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  width: 120px;
+  font-size: 1vw;
+  height: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+.company .details h3,
+.employee .details h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.company .details p,
+.employee .details p {
+  font-weight: 400;
+  font-size: 0.9vw;
+}
+
+@media screen and (max-width: 790px) {
+  .client > h1 {
+    font-size: 2.5vw;
+  }
+  .company,
+  .employee {
+    width: 50%;
+    height: 200px;
+  }
+  .company img,
+  .employee img {
+    width: 150px;
+  }
+  .company .details a,
+  .employee .details a {
+    font-size: 1.5vw;
+    width: 90px;
+  }
+  .company .details h3,
+  .employee .details h3 {
+    font-size: 2.2vw;
+    white-space: nowrap;
+  }
+  .company .details p,
+  .employee .details p {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .client > h1 {
+    font-size: 4vw;
+  }
+  .clients {
+    flex-direction: column;
+  }
+  .apply {
+    flex-direction: column;
+  }
+  .company,
+  .employee {
+    width: 100%;
+  }
+  .company img,
+  .employee img {
+    width: 135px;
+  }
+  .company .details h3,
+  .employee .details h3 {
+    font-size: 4vw;
+  }
+  .company .details p,
+  .employee .details p {
+    font-size: 2.4vw;
+  }
+  .company .details a,
+  .employee .details a {
+    font-size: 2.6vw;
   }
 }
